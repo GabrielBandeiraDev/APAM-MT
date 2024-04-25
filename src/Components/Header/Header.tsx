@@ -2,10 +2,11 @@ import { FC, HTMLAttributes } from 'react';
 
 import Logo from '/images/logo.png';
 
-import './_header.scss';
 import { NavLink } from 'react-router-dom';
 
-export type HeaderProps = {} & HTMLAttributes<HTMLHeadingElement>;
+export type HeaderProps = HTMLAttributes<HTMLHeadingElement>;
+
+import './_header.scss';
 
 const Header: FC<HeaderProps> = ({ ...rest }) => (
   <header className="header" {...rest}>
