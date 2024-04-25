@@ -4,25 +4,6 @@
   align-items: center;
   margin-top: 5.5rem;
 
-  &__logo-container {
-    display: flex;
-    align-items: center;
-
-    &__content {
-      h1 {
-        color: #031e7d;
-        font-size: 4rem;
-      }
-
-      span {
-        color: #031e7d;
-        font-size: 15px;
-        display: inline-block;
-        width: 13.9375rem;
-      }
-    }
-  }
-
   &__nav {
     &__list {
       list-style: none;

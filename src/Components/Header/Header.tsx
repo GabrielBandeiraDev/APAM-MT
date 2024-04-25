@@ -1,8 +1,9 @@
 import { FC, HTMLAttributes } from 'react';
-
-import Logo from '/images/logo.png';
-
 import { NavLink } from 'react-router-dom';
+
+import logo from '/images/logo.png';
+
+import Logo from '@/Components/Logo/Logo.tsx';
 
 export type HeaderProps = HTMLAttributes<HTMLHeadingElement>;
 
@@ -10,18 +11,7 @@ import './_header.scss';
 
 const Header: FC<HeaderProps> = ({ ...rest }) => (
   <header className="header" {...rest}>
-    <div className="header__logo-container">
-      <img
-        className="header__logo-container__img"
-        src={Logo}
-        alt="APAM - Associação Mato-grossense Protetora dos Animais"
-      />
-
-      <div className="header__logo-container__content">
-        <h1>APAM</h1>
-        <span>Associação Mato-grossense Protetora dos Animais</span>
-      </div>
-    </div>
+    <Logo src={logo} />
 
     <nav className="header__nav">
       <ul className="header__nav__list">
