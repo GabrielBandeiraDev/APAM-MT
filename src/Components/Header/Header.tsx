@@ -27,7 +27,7 @@ const Header: FC<HeaderProps> = ({ ...rest }) => (
         <li className="header__nav__item">
           <NavLink
             className={({ isActive }) => (isActive ? 'active' : '')}
-            to="/a"
+            to="/como-ajudar"
           >
             Como Ajudar
           </NavLink>
@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({ ...rest }) => (
         <li className="header__nav__item">
           <NavLink
             className={({ isActive }) => (isActive ? 'active' : '')}
-            to="/b"
+            to="/adocao"
           >
             Adoção
           </NavLink>
@@ -45,7 +45,7 @@ const Header: FC<HeaderProps> = ({ ...rest }) => (
         <li className="header__nav__item">
           <NavLink
             className={({ isActive }) => (isActive ? 'active' : '')}
-            to="/c"
+            to="/contato"
           >
             Contato
           </NavLink>
@@ -54,7 +54,7 @@ const Header: FC<HeaderProps> = ({ ...rest }) => (
         <li className="header__nav__item">
           <NavLink
             className={({ isActive }) => (isActive ? 'active' : '')}
-            to="/d"
+            to="/ajudar"
           >
             Ajudar
           </NavLink>
