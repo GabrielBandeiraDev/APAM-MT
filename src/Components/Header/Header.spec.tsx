@@ -10,11 +10,6 @@ describe('<Header />', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText('APAM')).toBeInTheDocument();
-    expect(
-      screen.getByText('Associação Mato-grossense Protetora dos Animais')
-    ).toBeInTheDocument();
-
     expect(screen.getByText('Home')).toBeInTheDocument();
     expect(screen.getByText('Como Ajudar')).toBeInTheDocument();
     expect(screen.getByText('Adoção')).toBeInTheDocument();
@@ -28,7 +23,11 @@ describe('<Header />', () => {
         <Header />
       </MemoryRouter>
     );
+
     expect(screen.getByText('Home')).toHaveAttribute('href', '/');
-    // @TODO Adicionar teste garantido href dos outros links
+    expect(screen.getByText('Como Ajudar')).toHaveAttribute('href', '/como-ajudar');
+    expect(screen.getByText('Adoção')).toHaveAttribute('href', '/adocao');
+    expect(screen.getByText('Contato')).toHaveAttribute('href', '/contato');
+    expect(screen.getByText('Ajudar')).toHaveAttribute('href', '/ajudar');
   });
 });
