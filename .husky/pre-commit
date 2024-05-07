@@ -1,2 +1,2 @@
-npm run lint:fix
-npm run test
+cd ./frontend && npm run lint:fix
+cd ./frontend && npm run test
