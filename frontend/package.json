@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "test": "jest --config jest.config.js --verbose --bail",
     "test:coverage": "npm test --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}'",
-    "prepare": "husky"
+    "prepare": "cd .. && husky"
   },
   "dependencies": {
     "react": "^18.2.0",
